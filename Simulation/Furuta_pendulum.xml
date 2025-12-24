@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="12/17/25||01:09:20" using="Simscape Multibody Link Version 7.4" from="SolidWorks 30.1.0"/>
+<ModelUnits mass="kilogram" length="meter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="CleanCAD" uid="CleanCAD" version="226">
+<AssemblyFile name="CleanCAD.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="Motor.stp-1" uid="Motor.stp-1" grounded="true" entityUid="Motor.stp*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1.2246467991473532e-16 1 0 -1 1.2246467991473532e-16</Rotation>
+<Translation>0.021411788164816422 0.009500000000000005 -0.024102336945563348</Translation>
+</Transform>
+</Instance>
+<Instance name="Encoder-1" uid="Encoder-1" entityUid="Encoder*:*Default">
+<Transform>
+<Rotation>0.77374383547773573 -2.8986107152501413e-15 0.63349860067738339 3.6313442055497481e-15 1 1.403010545140753e-16 -0.63349860067738339 2.1918943967523983e-15 0.77374383547773573</Rotation>
+<Translation>0.0071580696495750417 0.13040000000000002 -0.041511573243812744</Translation>
+</Transform>
+</Instance>
+<Instance name="Shaft Coupler 8-8mm-1" uid="Shaft Coupler 8-8mm-1" entityUid="Shaft Coupler 8-8mm*:*Default">
+<Transform>
+<Rotation>-0.53343861158741168 0.84583878349700581 1.566161778009845e-16 0 1.3844167346701055e-16 -0.99999999999999978 -0.84583878349700581 -0.53343861158741168 0</Rotation>
+<Translation>0.021411788164816349 0.092399999999999996 -0.02410233694556356</Translation>
+</Transform>
+</Instance>
+<Instance name="EncoderBracket-1" uid="EncoderBracket-1" entityUid="EncoderBracket*:*Default">
+<Transform>
+<Rotation>-0.63349860067738351 -2.5039280880631781e-16 0.77374383547773551 -2.3858700811707539e-16 1 1.2827019547505379e-16 -0.77374383547773551 -1.0334623741360252e-16 -0.63349860067738351</Rotation>
+<Translation>0.010325562652961997 0.10039999999999999 -0.037642854066424113</Translation>
+</Transform>
+</Instance>
+<Instance name="Shaft Coupler 8-5mm-1" uid="Shaft Coupler 8-5mm-1" entityUid="Shaft Coupler 8-5mm*:*Default">
+<Transform>
+<Rotation>0.63349860067738417 -0.75912959258753565 -0.14967225727461417 1.4866223275606203e-16 0.19343903035066082 -0.98111229812748557 0.77374383547773484 0.62153326797113484 0.12254335504353379</Rotation>
+<Translation>0.045785635022587277 0.13514246810459168 0.0070452974252749444</Translation>
+</Transform>
+</Instance>
+<Instance name="Allen 4 mm-1" uid="Allen 4 mm-1" entityUid="Allen 4 mm*:*Default">
+<Transform>
+<Rotation>2.8996482753197549e-16 0.63349860067738351 -0.77374383547773562 -1 3.8980584330314306e-16 0 2.6638471463713369e-16 0.77374383547773562 0.63349860067738351</Rotation>
+<Translation>0.042317241987170358 0.13040000000000002 0.0014312096252021007</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Concentric name="Concentric5">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>EncoderBracket-1</Uid>
+</InstancePath>
+<Position>-0.017500000000000002 -0.0079999999999999932 0</Position>
+<Axis>1.4802973661668795e-16 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Shaft Coupler 8-8mm-1</Uid>
+</InstancePath>
+<Position>0 0 0.024999999999999994</Position>
+<Axis>0 0 -0.99999999999999978</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident5">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>EncoderBracket-1</Uid>
+</InstancePath>
+<Position>-0.017500000000000002 -0.0079999999999999932 0</Position>
+<Axis>1.22464679914735e-16 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Shaft Coupler 8-8mm-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -0.99999999999999978</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric6">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Motor.stp-1</Uid>
+</InstancePath>
+<Position>0 0 0.067650000000000016</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Shaft Coupler 8-8mm-1</Uid>
+</InstancePath>
+<Position>0 0 0.024999999999999994</Position>
+<Axis>0 0 -0.99999999999999978</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Distance name="Distance2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Shaft Coupler 8-8mm-1</Uid>
+</InstancePath>
+<Position>0 0 0.024999999999999994</Position>
+<Axis>0 0 0.99999999999999978</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Motor.stp-1</Uid>
+</InstancePath>
+<Position>0 0 0.0574</Position>
+<Axis>0 0 1</Axis>
+</ConstraintGeometry>
+</Distance>
+<Concentric name="Concentric7">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>EncoderBracket-1</Uid>
+</InstancePath>
+<Position>-0.035000000000000003 0.029999999999999999 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Encoder-1</Uid>
+</InstancePath>
+<Position>0 0 0.040000000000000008</Position>
+<Axis>0 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident7">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>EncoderBracket-1</Uid>
+</InstancePath>
+<Position>-0.029999999999999999 0.0049999999999999906 0</Position>
+<Axis>1 3.0417069167812501e-16 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Encoder-1</Uid>
+</InstancePath>
+<Position>0 0 0.03500000000000001</Position>
+<Axis>0 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric9">
+<ConstraintGeometry geomType="line">
+<InstancePath>
+<Uid>Encoder-1</Uid>
+</InstancePath>
+<Position>0 0 0.024051902493929453</Position>
+<Axis>0 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Shaft Coupler 8-5mm-1</Uid>
+</InstancePath>
+<Position>-0.0085410879616730079 -0.0017737609767677961 0.0044840468410887457</Position>
+<Axis>-1 -1.6653345369377348e-16 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Distance name="Distance4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Encoder-1</Uid>
+</InstancePath>
+<Position>0 0 0.040000000000000008</Position>
+<Axis>0 0 1.0000000000000002</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Shaft Coupler 8-5mm-1</Uid>
+</InstancePath>
+<Position>-0.021541087961672995 -0.0017737609767677909 0.0044840468410887457</Position>
+<Axis>-1 -1.6653345369377348e-16 0</Axis>
+</ConstraintGeometry>
+</Distance>
+<Concentric name="Concentric10">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>Shaft Coupler 8-5mm-1</Uid>
+</InstancePath>
+<Position>-0.0085410879616730079 -0.0017737609767677961 0.0044840468410887457</Position>
+<Axis>-1 -1.6653345369377348e-16 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>Allen 4 mm-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 1.1657341758564144e-15</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Distance name="Distance5">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Shaft Coupler 8-5mm-1</Uid>
+</InstancePath>
+<Position>0.0034589120383270028 -0.0017737609767677917 0.0044840468410887457</Position>
+<Axis>1 1.6653345369377348e-16 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Allen 4 mm-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+</Distance>
+<Angle name="Angle2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Encoder-1</Uid>
+</InstancePath>
+<Position>-0.022000000000000002 0 0.0080877456068992604</Position>
+<Axis>-1.0000000000000002 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>EncoderBracket-1</Uid>
+</InstancePath>
+<Position>0 0.0050000000000000044 0</Position>
+<Axis>-4.9960036108132103e-16 1 0</Axis>
+</ConstraintGeometry>
+</Angle>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Allen 4 mm" uid="Allen 4 mm*:*Default" version="122">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Allen 4 mm.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.010143116119298235</Mass>
+<CenterOfMass>0.027156641173388583 0.023157390287985771 6.1165295389050529e-09</CenterOfMass>
+<Inertia>5.6586050880334093e-07 5.7375077224929617e-06 6.2809467375213715e-06 7.0307540340709569e-13 -4.0526262072482466e-12 -1.0566529658994085e-06</Inertia>
+</MassProperties>
+<GeometryFile name="Allen 4 mm_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.95686274509803915" g="0.95686274509803915" b="0.95686274509803915" a="1"/>
+<Diffuse r="0.95686274509803915" g="0.95686274509803915" b="0.95686274509803915" a="1"/>
+<Specular r="0.47843137254901957" g="0.47843137254901957" b="0.47843137254901957" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Encoder" uid="Encoder*:*Default" version="116">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Encoder.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.1799952336496321</Mass>
+<CenterOfMass>-0.00012079131609281012 -3.629183829474446e-07 0.01841038687038056</CenterOfMass>
+<Inertia>3.6747802733220531e-05 3.7279336624039773e-05 3.1582181110291217e-05 4.4250782649552948e-09 -1.8058035836572524e-07 1.6901626885964456e-09</Inertia>
+</MassProperties>
+<GeometryFile name="Encoder_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.99607843137254903" g="0.99607843137254903" b="1" a="1"/>
+<Diffuse r="0.99607843137254903" g="0.99607843137254903" b="1" a="1"/>
+<Specular r="0.49803921568627452" g="0.49803921568627452" b="0.5" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="EncoderBracket" uid="EncoderBracket*:*Default" version="118">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="EncoderBracket.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0183341727999622</Mass>
+<CenterOfMass>-0.023032181571650073 0.0083993558229830002 0</CenterOfMass>
+<Inertia>5.7594115948542613e-06 3.7750475295892569e-06 5.7079730351331383e-06 0 0 1.5101292161096332e-06</Inertia>
+</MassProperties>
+<GeometryFile name="EncoderBracket_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.92156862745098034" g="0.92156862745098034" b="0.92156862745098034" a="1"/>
+<Diffuse r="0.92156862745098034" g="0.92156862745098034" b="0.92156862745098034" a="1"/>
+<Specular r="0.46078431372549017" g="0.46078431372549017" b="0.46078431372549017" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Motor.stp" uid="Motor.stp*:*Default" version="115">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Motor.stp.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.015204885399045857</Mass>
+<CenterOfMass>-2.5162948581535011e-06 7.7768686867538234e-05 0.033458504349221256</CenterOfMass>
+<Inertia>5.4573877921419672e-06 5.4496729742894092e-06 1.219158402013759e-06 4.4005723408034503e-08 -3.1303172538443383e-10 2.0940321768877379e-10</Inertia>
+</MassProperties>
+<GeometryFile name="Motor.stp_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Diffuse r="0.74901960784313726" g="0.74901960784313726" b="0.74901960784313726" a="1"/>
+<Specular r="0.37450980392156863" g="0.37450980392156863" b="0.37450980392156863" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Shaft Coupler 8-5mm" uid="Shaft Coupler 8-5mm*:*Default" version="126">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Shaft Coupler 8-5mm.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.0077707363183359785</Mass>
+<CenterOfMass>-0.0083455756158936686 -0.0017737040727913613 0.0044840753265324119</CenterOfMass>
+<Inertia>2.3259602121626519e-07 5.2066050643605038e-07 5.1560421309117264e-07 9.6325389492165589e-13 5.4081974230955772e-13 -1.3018204874536335e-12</Inertia>
+</MassProperties>
+<GeometryFile name="Shaft Coupler 8-5mm_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.80000000000000004" g="0.80784313725490198" b="0.80000000000000004" a="1"/>
+<Diffuse r="0.80000000000000004" g="0.80784313725490198" b="0.80000000000000004" a="1"/>
+<Specular r="0.40000000000000002" g="0.40392156862745099" b="0.40000000000000002" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="Shaft Coupler 8-8mm" uid="Shaft Coupler 8-8mm*:*Default" version="122">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Shaft Coupler 8-8mm.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.006897595022356197</Mass>
+<CenterOfMass>-3.977525534971725e-09 -6.2073509861235588e-05 0.012499978084490491</CenterOfMass>
+<Inertia>4.6643062942346902e-07 4.6900828095024412e-07 2.2341376885378621e-07 6.20821524058885e-13 2.3592342724648508e-12 2.5082460180515156e-13</Inertia>
+</MassProperties>
+<GeometryFile name="Shaft Coupler 8-8mm_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
